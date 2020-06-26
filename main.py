@@ -1,11 +1,14 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+# from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 import time
 from time import sleep
 import random
 import sys
-
 
 archivo = open("cuenta.txt", "r")
 usuario = archivo.readline()
@@ -20,7 +23,8 @@ for tag in lineas:
 class InstagramBot:
     def __init__(self, username, password):
         self.username = username
-        self.driver = webdriver.Chrome("chromedriver.exe")
+        # self.driver = webdriver.Chrome("chromedriver.exe")
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.numero_de_likes = 0
 
     def closeBrowser(self):

@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-papiricojose9@gmail.com
-solovatoss14
-=======
-username
-password
->>>>>>> 7b4f3ad3e1cfac2ab58a47f0f8fbf3a5534232bf
